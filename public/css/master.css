@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.background_cartoon {
+  background-image: url("../img/jumbotron.jpg");
+}
+
+header {
+  background-color: blue;
+}
+
+div.jumbo_cont {
+  width: 100vw;
+  height: 50vh;
+}

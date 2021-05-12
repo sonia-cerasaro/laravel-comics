@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::get('/info', function () {
     return view('info');
 });
+
+Route::get('/movies', function () {
+  $database = config('movies');
+
+  return view('movies')->with('movies', $database);
+
+
+});
