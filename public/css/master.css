@@ -112,3 +112,9 @@ div.but_cont button {
   background-color: blue;
   text-align: center;
 }
+
+footer {
+  width: 100vw;
+  height: 50vh;
+  background-color: blue;
+}
