@@ -18,78 +18,84 @@
 
 <section class="white">
   <div class="cent_cont">
+
     <div class="card_info">
       <div class="title_conte">
         <h2>{{ $film['title'] }}</h2>
-
       </div>
+
       <div class="price_conte">
         <div class="first-sec">
           <p>U.S. Price: {{ $film['price'] }}</p>
-
         </div>
+
         <div class="sec-sec">
           <p>AVAILABLE</p>
-
         </div>
+
         <div class="third-sec">
           <p>Check Availability</p>
-
         </div>
 
       </div>
+
       <div class="descrip_cont">
         <p>{{ $film['description'] }}</p>
-
       </div>
-
     </div>
+
     <div class="card_add">
       <p>ADVERTISMENT</p>
-      <img src="/img/adv.jpg">
+      <div class="img_cont">
+        <img src="/img/adv.jpg">
+      </div>
     </div>
 
   </div>
 </section>
+
 <section class="lblue">
   <div class="cent_cont">
-    <div class="cont_right">
 
-    </div>
-    <div class="cont_left">
+    <div class="cont_right">
       <div class="title">
         <p>Talent</p>
       </div>
+
+      <div class="title_art">
+        <p>Art by:</p>
+        @foreach ($film['artists'] as $index => $artist)
+          <p> {{ $artist }}, </p>
+        @endforeach
+      </div>
+
+      <div class="content">
+        <p>Written by:</p>
+        @foreach ($film['writers'] as $index => $writer)
+          <p> {{ $writer }}, </p>
+        @endforeach
+      </div>
+
+
+    </div>
+
+    <div class="cont_left">
+      <div class="title">
+        <p>Specs</p>
+      </div>
+
       <div class="art_cont">
-        <div class="title_art">
-
-
-          @foreach ($film['artists'] as $index => $artist)
-
-                <p> {{ $artist }} </p>
-
-          @endforeach
-
-
-
-
-
-
-
-        </div>
-        <div class="content">
-
-          @foreach ($film['writers'] as $index => $writer)
-
-                <p> {{ $writer }} </p>
-
-          @endforeach
-
+        <div class="">
 
         </div>
 
       </div>
+
+
     </div>
+
+  </div>
+  <div class="last_sec">
 
   </div>
 </section>

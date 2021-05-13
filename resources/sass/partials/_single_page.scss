@@ -32,10 +32,106 @@ section {
   }
 }
 section {
-  &.white{
+  &.white {
     width: 100vw;
     height: 50%;
     background-color: white;
+    .cent_cont {
+      display: flex;
+      div {
+        &.card_info {
+          width: 70%;
+          height: 100%;
+          margin-top: 80px;
+          div {
+            &.title_conte {
+              width: 100%;
+              height: 20%;
+              h2 {
+                margin-top: 20px;
+                text-transform: uppercase;
+              }
+            }
+          }
+          div {
+            &.price_conte {
+              display: flex;
+              width: 100%;
+              height: 15%;
+              background-color: green;
+              border: black solid 1px;
+              div {
+                &.first-sec {
+                  width: 30%;
+                  height: 100%;
+                  p {
+                    color: #fff;
+                    margin: 15px;
+                  }
+                }
+              }
+              div {
+                &.sec-sec {
+                  width: 40%;
+                  height: 100%;
+                  border-right: #000 solid 1px;
+                  p {
+                    color: #fff;
+                    margin: 15px;
+                    text-align: right;
+                  }
+                }
+              }
+              div {
+                &.third-sec {
+                  width: 30%;
+                  height: 100%;
+                  p {
+                    color: #fff;
+                    margin: 15px;
+                    text-align: center;
+                  }
+                }
+              }
+            }
+          }
+          div {
+            &.descrip_cont{
+              width: 100%;
+              height: 100%;
+              margin-top: 10px;
+              p {
+                font-size: 0.9em;
+                margin-top: 15px;
+                line-height: 1.5;
+              }
+            }
+          }
+        }
+      }
+      div {
+        &.card_add {
+          width: 27%;
+          height: 100%;
+          margin-top: 80px;
+          p {
+            position: relative;
+            top: 12%;
+            left: 50%;
+          }
+          div {
+            &.img_cont {
+              width: 100%;
+              overflow: hidden;
+              margin-top: 50px;
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 section {
@@ -43,5 +139,51 @@ section {
     width: 100vw;
     height: 40%;
     background-color: lightblue;
+    div {
+      &.cent_cont {
+        div {
+          &.cont_right {
+            width: 50%;
+            height: 100%;
+            border: black solid 1px;
+            .title {
+              width: 100%;
+              height: 30%;
+              border-bottom: #000 solid 1px;
+            }
+            .title_art {
+              width: 100%;
+              height: 30%;
+              display: flex;
+            }
+            .content {
+              width: 100%;
+              height: 30%;
+              display: flex;
+            }
+
+
+          }
+        }
+        div {
+          &.cont_left {
+            width: 50%;
+            height: 100%;
+            border: black solid 1px;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+div {
+  &.last_sec {
+    width: 100%;
+    height: 116px;
+    border: black solid 1px;
   }
 }
