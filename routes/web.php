@@ -13,16 +13,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $database = config('movies');
-    return view('home', array('films' => $database));
+Route::get('/', function () {                               //Questa route parte dalla home prende il database in config (ossia, movies.php)
+                                                             //la freccia sta ad assegnare il nome films (all'array del db) mentre la function
+    return view('home')->with('films', config('movies'));    //config() riporta l'array (fa la stessa cosa del codice commnetato qui sotto)
 });
 
-Route::get('/info', function () {
+Route::get('/info/{id}', function () {      //id e' l'index dell'array db
     return view('info');
-});
+})->name('detail');                              //con la freccia function name() assegno un nome(detail) a questa rotta
 
-Route::get('/movies', function () {
-  $database = config('movies');
-  return view('partials.movies', array('films' => $database));
-});
+// Route::get('/', function () {
+//     $database = config('movies');
+//     return view('home', array('films' => $database));
+// });
+
+// Route::get('/movies', function () {
+//   $database = config('movies');
+//   return view('partials.movies', array('films' => $database));
+// });

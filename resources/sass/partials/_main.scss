@@ -15,13 +15,14 @@ main {
   }
 }
 
-div {
+a {
   &.card_cont {
     width: 150px;
     height: 160px;
     color: white;
     margin-top: 70px;
     margin-right: 20px;
+    overflow: hidden;
     div {
       &.back_cont {
         width: 100%;
@@ -35,7 +36,6 @@ div {
     div {
       &.title_cont {
         width: 100%;
-        height: 100%;
         margin-top: 10px;
       }
     }
@@ -55,5 +55,13 @@ div {
       background-color: blue;
       text-align: center;
     }
+  }
+}
+
+div {
+  &.blue_cont {
+    width: 100vw;
+    height: 20vh;
+    background-color: violet;
   }
 }
