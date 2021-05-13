@@ -1,7 +1,27 @@
 @extends('layouts.app')
 
 @section('main')
-<table>
+
+<main>
+  <div class="cent_cont">
+
+   @foreach ($films as $film)
+    <div class="card_cont">
+
+      <div class="back_cont">
+        <img src=" {{ $film['thumb'] }}">
+      </div>
+      <div class="title_cont">
+        {{ $film['title'] }}
+      </div>
+
+    </div>
+   @endforeach
+  </div>
+</main>
+
+
+<!-- <table>
   <thead>
     <tr>
       <th>
@@ -10,14 +30,14 @@
     </tr>
   </thead>
   <tbody>
-    
-    @foreach ($movies as $movie)
+
+    @foreach ($films as $film)
     <tr>
-      <td>{{ $movie['title'] }}</td>
+      <td>{{ $film['title'] }}</td>
     </tr>
     @endforeach
 
   </tbody>
-</table>
+</table> -->
 
 @endsection

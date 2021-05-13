@@ -1,5 +1,61 @@
-header {
-  background-color: blue;
+nav {
+  div {
+    &.blue_cont {
+      width: 100vw;
+      height: 5vh;
+      background-color: blue;
+      div {
+        &.width_cont {
+          width: 80vw;
+          margin: 0 auto;
+          .list_cont {
+            ul {
+              display: flex;
+              justify-content: flex-end;
+              li {
+                color: white;
+                margin-top: 10px;
+                margin-left: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  div {
+    &.white_cont {
+      width: 100vw;
+      height: 15vh;
+
+      div {
+        &.width_cont {
+          width: 80vw;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          align-content: center;
+          .brand_cont {
+            width: 80px;
+            height: 80px;
+            margin-top:10px;
+            img {
+              width: 100%;
+            }
+          }
+          .main_list_cont {
+            ul {
+              display: flex;
+              justify-content: center;
+              li {
+                margin-left: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 div {

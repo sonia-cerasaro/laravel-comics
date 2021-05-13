@@ -8,13 +8,92 @@
 
 .background_cartoon {
   background-image: url("../img/jumbotron.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-header {
+nav div.blue_cont {
+  width: 100vw;
+  height: 5vh;
   background-color: blue;
+}
+nav div.blue_cont div.width_cont {
+  width: 80vw;
+  margin: 0 auto;
+}
+nav div.blue_cont div.width_cont .list_cont ul {
+  display: flex;
+  justify-content: flex-end;
+}
+nav div.blue_cont div.width_cont .list_cont ul li {
+  color: white;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+nav div.white_cont {
+  width: 100vw;
+  height: 15vh;
+}
+nav div.white_cont div.width_cont {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+nav div.white_cont div.width_cont .brand_cont {
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+}
+nav div.white_cont div.width_cont .brand_cont img {
+  width: 100%;
+}
+nav div.white_cont div.width_cont .main_list_cont ul {
+  display: flex;
+  justify-content: center;
+}
+nav div.white_cont div.width_cont .main_list_cont ul li {
+  margin-left: 40px;
 }
 
 div.jumbo_cont {
   width: 100vw;
   height: 50vh;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+main div.cent_cont {
+  width: 80%;
+  height: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+div.card_cont {
+  width: 150px;
+  height: 150px;
+  color: white;
+  margin-top: 70px;
+  margin-right: 20px;
+  border: white solid 1px;
+  overflow: hidden;
+}
+div.card_cont div.back_cont {
+  width: 100%;
+  height: 80%;
+}
+div.card_cont div.back_cont img {
+  width: 100%;
+}
+div.card_cont div.title_cont {
+  width: 100%;
+  height: 100%;
 }

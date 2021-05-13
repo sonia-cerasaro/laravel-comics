@@ -15,6 +15,7 @@
       <div class="width_cont">
 
         <div class="brand_cont">
+          <img src="./img/dc-logo.png" alt="">
 
         </div>
         <div class="main_list_cont">
@@ -24,17 +25,14 @@
             <li>MOVIES</li>
             <li>TV</li>
             <li>GAMES</li>
+            <li><input type="text" placeholder="Search"></li>
           </ul>
-        </div>
-        <div class="inp_cont">
-          <input type="text" placeholder="Search">
         </div>
 
       </div>
     </div>
   </nav>
   <div class="jumbo_cont background_cartoon">
-
 
   </div>
 

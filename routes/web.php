@@ -24,7 +24,6 @@ Route::get('/info', function () {
 Route::get('/movies', function () {
   $database = config('movies');
 
-  return view('movies')->with('movies', $database);
-
+  return view('partials.movies', array('films' => $database));
 
 });
