@@ -18,9 +18,14 @@ Route::get('/', function () {                               //Questa route parte
     return view('home')->with('films', config('movies'));    //config() riporta l'array (fa la stessa cosa del codice commnetato qui sotto)
 });
 
-Route::get('/info/{id}', function () {      //id e' l'index dell'array db
-    return view('info');
-})->name('detail');                              //con la freccia function name() assegno un nome(detail) a questa rotta
+Route::get('/info/{id}', function ($id) {
+    $movies = config('movies');                                               //id e' l'index dell'array db
+    return view('info')->with('film', $movies[$id]);
+})->name('detail');
+
+// Route::get('/info', function () {
+//   return view('info');
+// });                                                           //con la freccia function name() assegno un nome(detail) a questa rotta
 
 // Route::get('/', function () {
 //     $database = config('movies');

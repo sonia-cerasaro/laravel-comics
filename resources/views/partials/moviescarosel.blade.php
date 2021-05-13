@@ -1,3 +1,7 @@
+@extends('layouts.app')
+
+@section('main')
+
 <main>
   <div class="cent_cont">
    @foreach ($films as $index => $film)
@@ -26,3 +30,6 @@
 <div class="blue_cont">
 
 </div>
+
+
+@endsection
