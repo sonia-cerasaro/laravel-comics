@@ -2,6 +2,11 @@
 
 @section('main')
 
-{{var_dump($film)}}
+@include('partials.single_page')
+
+
+
+
+
 
 @endsection
