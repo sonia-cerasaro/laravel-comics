@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
 @section('main')
-<p> HOME </p>
+
+@include('partials.moviescarosel')
+
+
+
 @endsection

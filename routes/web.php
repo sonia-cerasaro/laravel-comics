@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $database = config('movies');
+    return view('home', array('films' => $database));
 });
 
 Route::get('/info', function () {
@@ -23,7 +24,5 @@ Route::get('/info', function () {
 
 Route::get('/movies', function () {
   $database = config('movies');
-
   return view('partials.movies', array('films' => $database));
-
 });
