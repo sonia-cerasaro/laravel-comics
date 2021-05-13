@@ -15,12 +15,12 @@
       <div class="width_cont">
 
         <div class="brand_cont">
-          <img src="./img/dc-logo.png" alt="">
+          <img src="/img/dc-logo.png" alt="">
 
         </div>
         <div class="main_list_cont">
           <ul>
-            <li>CHARACTERS</li>
+            <li class="{{ Route::currentRouteName() == 'characters' ? 'active' : ''}}">CHARACTERS</li>
             <li>COMICS</li>
             <li>MOVIES</li>
             <li>TV</li>

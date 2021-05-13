@@ -13,6 +13,13 @@
   background-repeat: no-repeat;
 }
 
+.background_foot {
+  background-image: url("../img/footer-bg.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 nav div.blue_cont {
   width: 100vw;
   height: 5vh;
@@ -61,6 +68,10 @@ nav div.white_cont div.width_cont .main_list_cont ul li {
 div.jumbo_cont {
   width: 100vw;
   height: 50vh;
+}
+
+.active {
+  color: blue;
 }
 
 main {
@@ -120,6 +131,51 @@ div.blue_cont {
 
 footer {
   width: 100vw;
-  height: 50vh;
-  background-color: blue;
+  height: 40vh;
+}
+footer div.cont_cent {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.foot_conte {
+  width: calc(100% / 2);
+  height: 100%;
+}
+.foot_conte .lists ul li {
+  color: white;
+}
+
+div.foot_conte {
+  overflow: hidden;
+}
+div.foot_conte img {
+  width: 100%;
+  text-align: center;
+}
+
+div.foot_footer {
+  width: 100%;
+  height: 100px;
+  background-color: #3e4249;
+}
+div.foot_footer div.cont_cent {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.foot_footer div.cont_cent button {
+  width: 80px;
+  height: 30px;
+  color: white;
+  background-color: transparent;
+  border: blue solid 2px;
+}
+div.foot_footer div.cont_cent div.social_cont h4 {
+  color: blue;
 }

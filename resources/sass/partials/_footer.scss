@@ -1,5 +1,68 @@
 footer {
   width: 100vw;
-  height: 50vh;
-  background-color: blue;
+  height: 40vh;
+  div {
+    &.cont_cent {
+      width: 80%;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+    }
+  }
+}
+
+.foot_conte {
+      width: calc(100% / 2);
+      height: 100%;
+  .lists {
+    ul {
+      li {
+        color: white;
+      }
+    }
+  }
+}
+
+div {
+  &.foot_conte{
+    overflow: hidden;
+    img {
+      width: 100%;
+      text-align: center;
+
+    }
+
+  }
+}
+
+div {
+  &.foot_footer {
+    width: 100%;
+    height: 100px;
+    background-color: #3e4249;
+    div {
+      &.cont_cent {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button {
+          width: 80px;
+          height: 30px;
+          color: white;
+          background-color: transparent;
+          border: blue solid 2px;
+        }
+        div {
+          &.social_cont {
+            h4 {
+              color: blue;
+            }
+          }
+        }
+      }
+    }
+  }
 }

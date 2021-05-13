@@ -27,9 +27,10 @@
   </div>
 </main>
 
-<div class="blue_cont">
+<!-- <div class="blue_cont">
 
-</div>
+
+</div> -->
 
 
 @endsection
