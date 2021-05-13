@@ -18,26 +18,12 @@
     </div>
    @endforeach
   </div>
+
+  <div class="but_cont">
+    <button type="button" name="button">
+      LOAD MORE
+    </button>
+
+  </div>
 </main>
-
-
-<!-- <table>
-  <thead>
-    <tr>
-      <th>
-        titolo
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-
-    @foreach ($films as $film)
-    <tr>
-      <td>{{ $film['title'] }}</td>
-    </tr>
-    @endforeach
-
-  </tbody>
-</table> -->
-
 @endsection
