@@ -3,6 +3,32 @@ section {
     width: 100vw;
     height: 10%;
     background-color: blue;
+    position: relative;
+    div {
+      &.cent_cont {
+        div {
+          &.img_contei {
+            width: 150px;
+            height: 190px;
+            border: white solid 1px;
+            overflow: hidden;
+            position: absolute;
+            bottom: 30%;
+            div {
+              &.type_cont {
+                width: 100px;
+                height: 20px;
+                background-color: white;
+                position: relative;
+              }
+            }
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
   }
 }
 section {
@@ -17,18 +43,5 @@ section {
     width: 100vw;
     height: 40%;
     background-color: lightblue;
-  }
-}
-
-
-
-
-
-
-div {
-  &.white {
-    width: 100vw;
-    height: 100%;
-    background-color: white;
   }
 }

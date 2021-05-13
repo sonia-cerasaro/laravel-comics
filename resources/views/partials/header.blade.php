@@ -20,7 +20,7 @@
         </div>
         <div class="main_list_cont">
           <ul>
-            <li class="{{ Route::currentRouteName() == 'characters' ? 'active' : ''}}">CHARACTERS</li>
+            <li class="{{ Route::currentRouteName() == 'home' ? 'active' : ''}}">home</li>
             <li>COMICS</li>
             <li>MOVIES</li>
             <li>TV</li>
