@@ -65,14 +65,14 @@
       <div class="title_art">
         <p>Art by:</p>
         @foreach ($film['artists'] as $index => $artist)
-          <p> {{ $artist }}, </p>
+          {{ $artist }},
         @endforeach
       </div>
 
       <div class="content">
         <p>Written by:</p>
         @foreach ($film['writers'] as $index => $writer)
-          <p> {{ $writer }}, </p>
+          {{ $writer }},
         @endforeach
       </div>
 
@@ -84,13 +84,20 @@
         <p>Specs</p>
       </div>
 
-      <div class="art_cont">
-        <div class="">
-
-        </div>
-
+      <div class="title_art">
+        <p>Series:</p>
+        {{ $film['series']}}
       </div>
 
+      <div class="content">
+        <p>Series:</p>
+        {{ $film['price']}}
+      </div>
+
+      <div class="content">
+        <p>Series:</p>
+        {{ $film['sale_date']}}
+      </div>
 
     </div>
 

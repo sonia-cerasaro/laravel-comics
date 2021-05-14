@@ -137,7 +137,7 @@ div.blue_cont {
 section.blue {
   width: 100vw;
   height: 10%;
-  background-color: blue;
+  background-color: #0d7cec;
   position: relative;
 }
 section.blue div.cent_cont div.img_contei {
@@ -245,38 +245,85 @@ section.white .cent_cont div.card_add div.img_cont img {
 section.lblue {
   width: 100vw;
   height: 40%;
-  background-color: lightblue;
+  background-color: #dbe9f0;
+  border-top: lightgrey solid 1px;
 }
 section.lblue div.cent_cont div.cont_right {
-  width: 50%;
+  width: 45%;
   height: 100%;
-  border: black solid 1px;
 }
 section.lblue div.cent_cont div.cont_right .title {
   width: 100%;
   height: 30%;
-  border-bottom: #000 solid 1px;
+  border-bottom: lightgrey solid 1px;
+}
+section.lblue div.cent_cont div.cont_right .title p {
+  padding: 10px;
 }
 section.lblue div.cent_cont div.cont_right .title_art {
   width: 100%;
   height: 30%;
   display: flex;
+  border-bottom: lightgrey solid 1px;
+  font-size: 0.7em;
+  padding: 10px;
+}
+section.lblue div.cent_cont div.cont_right .title_art p {
+  width: 50%;
+  height: 100%;
 }
 section.lblue div.cent_cont div.cont_right .content {
   width: 100%;
   height: 30%;
   display: flex;
+  font-size: 0.7em;
+  padding: 10px;
+  border-bottom: lightgrey solid 1px;
 }
-section.lblue div.cent_cont div.cont_left {
+section.lblue div.cent_cont div.cont_right .content p {
   width: 50%;
   height: 100%;
-  border: black solid 1px;
+}
+section.lblue div.cent_cont div.cont_left {
+  width: 45%;
+  height: 100%;
+}
+section.lblue div.cent_cont div.cont_left div.title {
+  width: 100%;
+  height: 30%;
+  border-bottom: lightgrey solid 1px;
+}
+section.lblue div.cent_cont div.cont_left div.title p {
+  padding: 10px;
+}
+section.lblue div.cent_cont div.cont_left .title_art {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  border-bottom: lightgrey solid 1px;
+  font-size: 0.7em;
+  padding: 10px;
+}
+section.lblue div.cent_cont div.cont_left .title_art p {
+  width: 50%;
+  height: 100%;
+}
+section.lblue div.cent_cont div.cont_left .content {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  font-size: 0.7em;
+  padding: 10px;
+  border-bottom: lightgrey solid 1px;
+}
+section.lblue div.cent_cont div.cont_left .content p {
+  width: 50%;
+  height: 100%;
 }
 
 div.last_sec {
   width: 100%;
-  height: 116px;
-  border: black solid 1px;
+  border: lightgrey solid 1px;
 }
 
 footer {
