@@ -1,16 +1,32 @@
 main {
   width: 100vw;
-  height: 100vh;
-  background-color: black;
-  position: relative;
+  height: 50vh;
+  background-color: $petrol;
   div {
     &.cent_cont {
       width: 80%;
-      height: 70%;
+      height: 100%;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      position: relative;
+    }
+  }
+}
+div {
+  &.current_series {
+    width: 200px;
+    background-color: $blue;
+    padding: 7px;
+    color: $white;
+    text-align: center;
+    position: absolute;
+    top: -3%;
+    left: -2%;
+    z-index: 1;
+    h2 {
+      font-size: 25px;
     }
   }
 }
@@ -22,7 +38,6 @@ a {
     color: white;
     margin-top: 70px;
     margin-right: 20px;
-
     div {
       &.back_cont {
         width: 150px;
@@ -37,6 +52,9 @@ a {
       &.title_cont {
         width: 100%;
         margin-top: 10px;
+        p {
+          text-transform: uppercase;
+        }
       }
     }
   }
@@ -44,24 +62,60 @@ a {
 
 div {
   &.but_cont {
-    position: absolute;
-    left: 50%;
-    top: 90%;
-    transform: translate(-50%, -50%);
-    button {
-      width: 150px;
-      height: 30px;
-      color: white;
-      background-color: blue;
-      text-align: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: $petrol;
+    div {
+      &.cent_conte {
+        padding-top: 40px;
+        button {
+          width: 150px;
+          height: 30px;
+          color: white;
+          background-color: $blue;
+          text-align: center;
+        }
+      }
     }
   }
 }
 
 div {
-  &.blue_cont {
+  &.blue_cont_last {
     width: 100vw;
-    height: 20vh;
-    background-color: violet;
+    height: 15vh;
+    background-color: $blue;
+    div {
+      &.cent_conteiner {
+        height: 100%;
+        @include container-center;
+        // border: white solid 1px;
+        display: flex;
+        div {
+          &.card {
+            height: 100%;
+            width: calc(100% / 5);
+            // border: white solid 1px;
+            color: $white;
+            display: flex;
+            align-items: center;
+            div {
+              &.cont_ic {
+                width: 50px;
+                height: 100px;
+                margin-right: 10px;
+                display: flex;
+                justify-content: center;
+                img {
+                  width: 90%;
+                  margin: auto;
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

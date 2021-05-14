@@ -1,0 +1,19 @@
+@mixin container-center {
+  width: $center;
+  margin: 0 auto;
+}
+
+@mixin transform {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin margin-bottom ($value) {
+  margin-bottom: #{$value}px;
+}
+
+@mixin flex-box () {
+  display: flex;
+  align-items: center;
+}

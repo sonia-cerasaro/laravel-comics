@@ -25,7 +25,7 @@ Route::get('/info/{id}', function ($id) {
 
 // Route::get('/info', function () {
 //   return view('info');
-// });                                                           //con la freccia function name() assegno un nome(detail) a questa rotta
+// });                                                                 //con la freccia function name() assegno un nome(detail) a questa rotta
 
 // Route::get('/', function () {
 //     $database = config('movies');

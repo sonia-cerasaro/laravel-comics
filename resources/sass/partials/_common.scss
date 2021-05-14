@@ -1,3 +1,17 @@
+// color
+
+.blue {
+  color: $blue;
+}
+
+// background
+.background_logo {
+  background-image: url('../img/dc-logo.png');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .background_cartoon {
   background-image: url('../img/jumbotron.jpg');
   background-position: top;
@@ -5,14 +19,26 @@
   background-repeat: no-repeat;
 }
 
-.background_foot {
-  background-image: url('../img/footer-bg.jpg');
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+// .background_foot {
+//   background-image: url('../img/footer-bg.jpg');
+//   background-position: top;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }
 
 .active {
   cursor: pointer;
   color: red;
+}
+
+.cent_cont_com {
+  @include container-center;
+}
+
+.text_center {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
