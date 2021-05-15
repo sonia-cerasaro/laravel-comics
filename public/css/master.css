@@ -27,6 +27,21 @@
   background-repeat: no-repeat;
 }
 
+.background_foot {
+  background-image: url("../img/footer-bg.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.background_dc {
+  background-image: url("../img/dc-logo-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 370px;
+}
+
 .active {
   cursor: pointer;
   color: red;
@@ -124,13 +139,12 @@ nav div.white_cont div.width_cont div.input i {
 
 div.jumbo_cont {
   width: 100vw;
-  height: 30vh;
+  height: 40vh;
   position: relative;
 }
 
 main {
   width: 100vw;
-  height: 50vh;
   background-color: #111218;
 }
 main div.cent_cont {
@@ -183,7 +197,7 @@ a.card_cont div.title_cont p {
 
 div.but_cont {
   width: 100vw;
-  height: 10vh;
+  height: 15vh;
   background-color: #111218;
 }
 div.but_cont div.cent_conte {
@@ -422,29 +436,42 @@ div.last_sec {
 
 footer {
   width: 100vw;
-  height: 40vh;
 }
 footer div.cont_cent {
   width: 80%;
-  height: 100%;
   margin: 0 auto;
   display: flex;
 }
 
 .foot_conte {
   width: calc(100% / 2);
-  height: 100%;
+}
+.foot_conte .lists {
+  display: flex;
+}
+.foot_conte .lists ul {
+  margin-right: 15px;
+}
+.foot_conte .lists ul li:first-child {
+  font-weight: bolder;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #fff;
 }
 .foot_conte .lists ul li {
-  color: white;
+  color: #797979;
 }
 
-div.foot_conte {
-  overflow: hidden;
+div.info {
+  color: #797979;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-div.foot_conte img {
+
+div.foot_conte div.img_cont {
   width: 100%;
-  text-align: center;
+  height: 120%;
 }
 
 div.foot_footer {
@@ -461,12 +488,24 @@ div.foot_footer div.cont_cent {
   align-items: center;
 }
 div.foot_footer div.cont_cent button {
-  width: 80px;
+  width: 100px;
   height: 30px;
-  color: white;
+  color: #fff;
   background-color: transparent;
-  border: blue solid 2px;
+  border: #0d7cec solid 2px;
+}
+div.foot_footer div.cont_cent div.social_cont {
+  display: flex;
+  align-items: center;
 }
 div.foot_footer div.cont_cent div.social_cont h4 {
-  color: blue;
+  color: #0d7cec;
+}
+div.foot_footer div.cont_cent div.social_cont div.icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+div.foot_footer div.cont_cent div.social_cont div.icon img {
+  width: 100%;
 }

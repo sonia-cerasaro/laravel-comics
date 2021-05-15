@@ -19,12 +19,20 @@
   background-repeat: no-repeat;
 }
 
-// .background_foot {
-//   background-image: url('../img/footer-bg.jpg');
-//   background-position: top;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-// }
+.background_foot {
+  background-image: url('../img/footer-bg.jpg');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.background_dc {
+  background-image: url('../img/dc-logo-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 370px;
+}
 
 .active {
   cursor: pointer;

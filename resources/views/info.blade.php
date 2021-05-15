@@ -4,9 +4,4 @@
 
 @include('partials.single_page')
 
-
-
-
-
-
 @endsection
