@@ -4,6 +4,23 @@
   color: $blue;
 }
 
+.white {
+  color: $white;
+}
+
+.grey {
+  color: $darkGrey;
+}
+
+.ice {
+  color: $ice;
+}
+
+.line_bottom {
+  border-bottom: $lightgrey solid 1px;
+
+}
+
 // background
 .background_logo {
   background-image: url('../img/dc-logo.png');

@@ -13,6 +13,22 @@
   color: #0d7cec;
 }
 
+.white {
+  color: #fff;
+}
+
+.grey {
+  color: #303030;
+}
+
+.ice {
+  color: #f7f7f7;
+}
+
+.line_bottom {
+  border-bottom: #e5e3e3 solid 1px;
+}
+
 .background_logo {
   background-image: url("../img/dc-logo.png");
   background-position: top;
@@ -62,7 +78,6 @@ a {
 
 nav div.blue_cont {
   width: 100vw;
-  height: 3vh;
   background-color: #0d7cec;
 }
 nav div.blue_cont div.width_cont {
@@ -242,40 +257,40 @@ div.blue_cont_last div.cent_conteiner div.card div.cont_ic img {
   display: block;
 }
 
-section.blue {
-  width: 100vw;
-  height: 10%;
-  background-color: #0d7cec;
+div.blue_cont_last .cent_conteiner {
   position: relative;
 }
-section.blue div.cent_cont div.img_contei {
-  width: 150px;
-  height: 190px;
-  border: white solid 1px;
-  overflow: hidden;
+div.blue_cont_last .cent_conteiner div.img_contei {
+  width: 180px;
+  border: #fff solid 2px;
+  border-radius: 3px;
   position: absolute;
-  bottom: 30%;
+  bottom: -75%;
 }
-section.blue div.cent_cont div.img_contei div.type_cont {
-  width: 100px;
-  height: 20px;
-  background-color: white;
-  position: relative;
+div.blue_cont_last .cent_conteiner div.img_contei .type_cont {
+  background-color: #0d7cec;
+  text-transform: uppercase;
+  padding: 3px;
 }
-section.blue div.cent_cont div.img_contei img {
+div.blue_cont_last .cent_conteiner div.img_contei img {
   width: 100%;
+}
+div.blue_cont_last .cent_conteiner div.img_contei div.type_conte {
+  background-color: #0d7cec;
+  padding: 5px;
+  margin-top: 0;
+  border-radius: 3px;
 }
 
 section.white {
   width: 100vw;
-  height: 50%;
-  background-color: white;
+  background-color: #fff;
 }
 section.white .cent_cont {
   display: flex;
 }
 section.white .cent_cont div.card_info {
-  width: 70%;
+  width: 60%;
   height: 100%;
   margin-top: 80px;
 }
@@ -283,16 +298,20 @@ section.white .cent_cont div.card_info div.title_conte {
   width: 100%;
   height: 20%;
 }
-section.white .cent_cont div.card_info div.title_conte h2 {
+section.white .cent_cont div.card_info div.title_conte h1 {
+  color: #000;
   margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 25px;
   text-transform: uppercase;
 }
 section.white .cent_cont div.card_info div.price_conte {
   display: flex;
   width: 100%;
   height: 15%;
-  background-color: #73ba4e;
-  border: black solid 1px;
+  background-color: #249e6d;
+  border-bottom: #303030 solid 1px;
+  border-radius: 3px;
 }
 section.white .cent_cont div.card_info div.price_conte div.first-sec {
   width: 30%;
@@ -305,7 +324,7 @@ section.white .cent_cont div.card_info div.price_conte div.first-sec p {
 section.white .cent_cont div.card_info div.price_conte div.sec-sec {
   width: 40%;
   height: 100%;
-  border-right: #000 solid 1px;
+  border-right: #303030 solid 1px;
 }
 section.white .cent_cont div.card_info div.price_conte div.sec-sec p {
   color: #fff;
@@ -327,19 +346,18 @@ section.white .cent_cont div.card_info div.descrip_cont {
   margin-top: 10px;
 }
 section.white .cent_cont div.card_info div.descrip_cont p {
+  color: black;
   font-size: 0.9em;
   margin-top: 15px;
   line-height: 1.5;
 }
 section.white .cent_cont div.card_add {
   width: 27%;
-  height: 100%;
-  margin-top: 80px;
 }
-section.white .cent_cont div.card_add p {
-  position: relative;
-  top: 12%;
-  left: 50%;
+section.white .cent_cont div.card_add p.ad {
+  color: #303030;
+  text-align: right;
+  margin-bottom: 5px;
 }
 section.white .cent_cont div.card_add div.img_cont {
   width: 100%;
@@ -348,90 +366,96 @@ section.white .cent_cont div.card_add div.img_cont {
 }
 section.white .cent_cont div.card_add div.img_cont img {
   width: 100%;
+  margin-bottom: 40px;
 }
 
 section.lblue {
   width: 100vw;
-  height: 40%;
-  background-color: #dbe9f0;
-  border-top: lightgrey solid 1px;
+  background-color: #f7f7f7;
+  border-top: #e5e3e3 solid 1px;
 }
 section.lblue div.cent_cont div.cont_right {
   width: 45%;
-  height: 100%;
+  margin-bottom: 50px;
 }
 section.lblue div.cent_cont div.cont_right .title {
   width: 100%;
-  height: 30%;
-  border-bottom: lightgrey solid 1px;
+  border-bottom: #e5e3e3 solid 1px;
 }
 section.lblue div.cent_cont div.cont_right .title p {
-  padding: 10px;
+  font-size: 1.3em;
+  padding: 15px;
 }
 section.lblue div.cent_cont div.cont_right .title_art {
   width: 100%;
-  height: 30%;
   display: flex;
-  border-bottom: lightgrey solid 1px;
+  border-bottom: #e5e3e3 solid 1px;
   font-size: 0.7em;
-  padding: 10px;
+  padding: 15px;
 }
 section.lblue div.cent_cont div.cont_right .title_art p {
   width: 50%;
-  height: 100%;
 }
 section.lblue div.cent_cont div.cont_right .content {
   width: 100%;
-  height: 30%;
   display: flex;
   font-size: 0.7em;
-  padding: 10px;
-  border-bottom: lightgrey solid 1px;
+  padding: 15px;
 }
 section.lblue div.cent_cont div.cont_right .content p {
+  padding-right: 25px;
   width: 50%;
-  height: 100%;
 }
 section.lblue div.cent_cont div.cont_left {
   width: 45%;
-  height: 100%;
 }
 section.lblue div.cent_cont div.cont_left div.title {
   width: 100%;
-  height: 30%;
-  border-bottom: lightgrey solid 1px;
+  border-bottom: #e5e3e3 solid 1px;
 }
 section.lblue div.cent_cont div.cont_left div.title p {
-  padding: 10px;
+  font-size: 1.3em;
+  padding: 15px;
 }
 section.lblue div.cent_cont div.cont_left .title_art {
   width: 100%;
-  height: 20%;
   display: flex;
-  border-bottom: lightgrey solid 1px;
+  border-bottom: #e5e3e3 solid 1px;
   font-size: 0.7em;
-  padding: 10px;
+  padding: 15px;
+  text-transform: uppercase;
 }
 section.lblue div.cent_cont div.cont_left .title_art p {
   width: 50%;
-  height: 100%;
 }
 section.lblue div.cent_cont div.cont_left .content {
   width: 100%;
-  height: 20%;
   display: flex;
   font-size: 0.7em;
-  padding: 10px;
-  border-bottom: lightgrey solid 1px;
+  padding: 15px;
 }
 section.lblue div.cent_cont div.cont_left .content p {
   width: 50%;
-  height: 100%;
 }
 
-div.last_sec {
+section.grey {
+  height: 15vh;
+  border-top: #e5e3e3 solid 1px;
+  background-image: linear-gradient(#f7f7f7, #e5e3e3);
+}
+section.grey div.last_card {
+  width: calc(100% / 4);
+  display: flex;
+  justify-content: space-around;
+  border-left: #f7f7f7 solid 1px;
+  padding-top: 20px;
+}
+section.grey div.last_card div.img_c {
+  width: 50px;
+  height: 50px;
+}
+section.grey div.last_card div.img_c img {
   width: 100%;
-  border: lightgrey solid 1px;
 }
 
 footer {
@@ -460,11 +484,11 @@ footer div.cont_cent {
   color: #fff;
 }
 .foot_conte .lists ul li {
-  color: #797979;
+  color: #e5e3e3;
 }
 
 div.info {
-  color: #797979;
+  color: #e5e3e3;
   margin-top: 10px;
   margin-bottom: 10px;
 }

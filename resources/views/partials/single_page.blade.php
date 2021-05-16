@@ -2,26 +2,28 @@
 
 @section('main')
 
-<section class="blue">
-
-  <div class="cent_cont">
+<div class="blue_cont_last">
+  <div class="cent_conteiner">
 
     <div class="img_contei">
-      <div class="type_cont">
+      <div class="type_cont text_center white">
         {{ $film['type'] }}
       </div>
       <img src="{{ $film['thumb'] }}">
+      <div class="type_conte text_center white">
+        VIEW GALLERY
+      </div>
     </div>
 
   </div>
-</section>
+</div>
 
 <section class="white">
   <div class="cent_cont">
 
     <div class="card_info">
       <div class="title_conte">
-        <h2>{{ $film['title'] }}</h2>
+        <h1>{{ $film['title'] }}</h1>
       </div>
 
       <div class="price_conte">
@@ -45,8 +47,11 @@
     </div>
 
     <div class="card_add">
-      <p>ADVERTISMENT</p>
+
       <div class="img_cont">
+        <p class="ad">
+          ADVERTISMENT
+        </p>
         <img src="/img/adv.jpg">
       </div>
     </div>
@@ -59,51 +64,101 @@
 
     <div class="cont_right">
       <div class="title">
-        <p>Talent</p>
+        <p class="grey">Talent</p>
       </div>
 
-      <div class="title_art">
-        <p>Art by:</p>
-        @foreach ($film['artists'] as $index => $artist)
-          {{ $artist }},
+      <div class="title_art blue">
+        <p class="grey">
+          Art by:
+        </p>
+        @foreach ($film['artists'] as $artist)
+        {{ $artist }}
+        @if (!$loop->last)
+        ,
+        @endif
         @endforeach
       </div>
 
-      <div class="content">
-        <p>Written by:</p>
-        @foreach ($film['writers'] as $index => $writer)
-          {{ $writer }},
+      <div class="content blue">
+        <p class="grey">
+          Written by:
+        </p>
+        @foreach ($film['writers'] as $writer)
+          {{ $writer }}
+          @if (!$loop->last)
+          ,
+          @endif
         @endforeach
       </div>
-
-
     </div>
 
     <div class="cont_left">
-      <div class="title">
+      <div class="title grey">
         <p>Specs</p>
       </div>
 
-      <div class="title_art">
-        <p>Series:</p>
+      <div class="title_art blue">
+        <p class=" grey">
+          Series:
+        </p>
         {{ $film['series']}}
       </div>
 
-      <div class="content">
-        <p>Series:</p>
+      <div class="content grey line_bottom">
+        <p class="grey">
+          U.S. Price:
+        </p>
         {{ $film['price']}}
       </div>
 
-      <div class="content">
-        <p>Series:</p>
+      <div class="content grey">
+        <p class="grey">
+          On Sale Date:
+        </p>
         {{ $film['sale_date']}}
       </div>
 
     </div>
 
   </div>
-  <div class="last_sec">
 
+
+</section>
+
+<section class="grey">
+  <div class="cent_cont">
+    <div class="last_card">
+      <span class="grey">
+        DIGITAL COMICS
+      </span>
+      <div class="img_c">
+        <img src="/img/buy-comics-digital-comics.png" alt="">
+      </div>
+    </div>
+    <div class="last_card">
+      <span class="grey">
+        SHOP DC
+      </span>
+      <div class="img_c">
+        <img src="/img/buy-comics-merchandise.png" alt="">
+      </div>
+    </div>
+    <div class="last_card">
+      <span class="grey">
+        COMIC SHOP LOCATOR
+      </span>
+      <div class="img_c">
+        <img src="/img/buy-comics-shop-locator.png" alt="">
+      </div>
+    </div>
+    <div class="last_card">
+      <span class="grey">
+        SUBSCRIPTIONS
+      </span>
+      <div class="img_c">
+        <img src="/img/buy-comics-subscriptions.png" alt="">
+      </div>
+    </div>
   </div>
 </section>
 
